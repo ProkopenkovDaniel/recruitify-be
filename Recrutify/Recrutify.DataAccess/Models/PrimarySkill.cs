@@ -5,6 +5,7 @@
         Net,
         JavaScript,
         AutomationQA,
+        QA,
         BusinessAnalyst,
         DevOps,
         Java,

@@ -2,10 +2,10 @@
 {
     public enum Role
     {
-        Admin,
-        Manager,
-        Recruiter,
-        Interviewer,
-        Mentor,
+        Admin = 0,
+        Manager = 1,
+        Recruiter = 2,
+        Interviewer = 3,
+        Mentor = 4,
     }
 }
