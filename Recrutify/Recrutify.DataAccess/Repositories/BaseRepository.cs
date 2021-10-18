@@ -10,7 +10,7 @@ namespace Recrutify.DataAccess.Repositories
         : IBaseRepository<T>
         where T : IDataModel
     {
-        private readonly IMongoCollection<T> _collection;
+        protected readonly IMongoCollection<T> _collection;
 
         protected BaseRepository(IMongoDatabase database, string collectionName)
         {

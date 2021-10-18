@@ -7,8 +7,6 @@ namespace Recrutify.DataAccess.Repositories
 {
     public class CourseRepository : BaseRepository<Course>, ICourseRepository
     {
-        private readonly IMongoCollection<Course> collection;
-
         public CourseRepository(IMongoDatabase database, string collectionName)
             : base(database, collectionName)
         {
@@ -16,7 +14,7 @@ namespace Recrutify.DataAccess.Repositories
 
         public List<Course> GetAll()
         {
-            return collection.Find(cours => true).ToList();
+            return _collection.Find(cours => true).ToList();
         }
     }
 }
