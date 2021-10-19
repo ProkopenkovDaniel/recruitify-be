@@ -4,7 +4,6 @@ on:
   push:
     branches:
       -main
-      -Setup-ci/cd
   pull_request:
 
 jobs:
@@ -28,3 +27,4 @@ jobs:
       - name: Test
         run: dotnet test --no-restore --verbosity normal
       - run: echo "ok"
+
