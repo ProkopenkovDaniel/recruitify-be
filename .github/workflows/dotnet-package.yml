@@ -21,10 +21,10 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
       - name: Install dependencies
-        run: dotnet restore ./Recrutify/.editorconfig
+        run: dotnet restore ./Recrutify/Recrutify.sln
       - name: Build
-        run: dotnet build --configuration Release --no-restore ./Recrutify/.editorconfig
+        run: dotnet build --configuration Release --no-restore ./Recrutify/Recrutify.sln
       - name: Test
-        run: dotnet test --no-restore --verbosity normal ./Recrutify/.editorconfig
+        run: dotnet test --no-restore --verbosity normal ./Recrutify/Recrutify.sln
       - run: echo "ok"
 
